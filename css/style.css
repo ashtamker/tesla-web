@@ -1,0 +1,387 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("../Gotham-Font/GothamLight.ttf") format("truetype");
+    
+  }
+ 
+  @font-face {
+    font-family: "GothamMedium";
+    src: url("../fonts/GothamMedium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Gotham";
+    src: url("../fonts/GothamBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+body {
+  scroll-snap-type: y mandatory ;
+  font-family: 'Gotham';
+  
+}
+
+header img {
+  background-color: none;
+  display: block;
+  margin-left: 30px;
+  margin-top: 15px;
+  float: left;
+
+}
+
+header {
+  background-image: url("../img/model3desktop.png");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+  position: relative;
+  scroll-snap-align: start;
+
+}
+/*
+nav {
+  width: 1423PX;
+}
+*/
+nav ul {
+  margin-left: 700px;
+  padding-top: 20px;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+ 
+}
+
+nav ul li {
+  display: block;
+  float: left;
+  padding-right: 20px;
+  line-height: 18px;
+  font-weight: 400 bold;
+  font-size: 14px;
+  
+  
+
+}
+
+nav ul a {
+  text-decoration: none;
+  color:#fff;
+}
+
+ li div {
+  width: 18px;
+  height: 2px;
+  background-color:#fff;
+  margin: 3px 0;
+}
+
+#rightnav {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  
+
+}
+
+#rightnav ul  {
+  width: 300px;
+  margin-left: 500px;
+  padding-top: 20px;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+}
+
+ #rightnav ul li {
+  display: block;
+  float: right;
+  right: 5px;
+  top: 20px;
+  color: #fff;
+  margin-left: 0px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 70px;
+  padding-top: 20px;
+  font-family: 'GothamMedium';
+
+}
+
+aside {
+  position: fixed;
+  float: left;
+  display: block;
+  padding: 5px;
+  top: 30vh;
+
+}
+aside div {
+  width: 3px;
+  height: 23px;
+  background-color: #fff;
+  margin: 5px 10px;
+  
+}
+aside div p {
+  width: 60px;
+  height: 23px;
+  font-size: 12px;
+  color: transparent;
+  margin-left: 6px;
+  margin-top: 5px;
+  padding-left: 5px;
+  padding-top: 4px;
+  
+}
+aside div p:hover {
+ color: #fff;
+}
+
+section {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+section p {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+section h3 {
+  font-size: 28px;
+}
+
+section #speed {
+  position: absolute;
+  left: 30%;
+  top: 80%;
+  color: #fff;
+  margin-bottom: 5px;
+  
+
+
+  
+}
+
+section .range {
+  position: absolute;
+  left: 40%;
+  top: 80%;
+  color: #fff;
+  padding-left: 15px;
+  border-left: 1px solid #fff;
+
+}
+
+section .awd {
+  position: absolute;
+  left: 46%;
+  top: 80%;
+  color: #fff;
+  padding-left: 15px;
+  border-left: 1px solid #fff;
+}
+
+section button {
+  position: absolute;
+  left: 53%;
+  top: 80%;
+  color: #fff;
+  width: 158px;
+  height: 38px;
+  border: 3px solid #fff;
+  background-color: transparent;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
+section button:hover {
+  background-color: #fff;
+  color: black;
+}
+/* performance section style  */
+.performance {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.performance div img {
+  background-color: none;
+  display: block;
+  margin-left: 20px;
+  margin-top: 20px;
+  float: left;
+  padding-left: 3px;
+
+}
+
+.performance div #uparrow {
+  background-color: none;
+  display: block;
+  margin-right: 25px;
+  margin-top: 25px;
+  float: right;
+  color: #fff;
+  
+
+}
+
+.performance .top   {
+  background-image: url("../img/performance-desktop.png");
+  width: 100vw;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.performance .rightbottom {
+  float: right;
+  margin-right: 500px;
+  margin-top: 30px;
+  color: #393c41;
+  font-family: "Gotham";
+  text-align: left;
+}
+ 
+.leftbottom {
+  float: left;
+  position: absolute;
+  text-align: left;
+} 
+
+.leftbottom p {
+  float: left;
+  position: absolute;
+  left: 450px;
+  width: 50vw;
+  top: 30px;
+
+}
+.leftbottom h3 {
+  float: left;
+  position: absolute;
+  left: 450px;
+  width: 50vw;
+  top: 40px;
+  margin-top: 5px;
+}
+.leftbottom #leftbt{
+  float: left;
+  position: absolute;
+  left: 550px;
+  top: 100px;
+  width: 158px;
+  height: 38px;
+  color: #000;
+  border: 3px solid #000;
+  background-color: transparent;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+.leftbottom #leftbt:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.safety {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+.safety .right {
+  background-image: url("../img/model_3_safety_hero.png");
+  width: 78%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  position: absolute;
+  float: right;
+  right: 0;
+
+
+}
+
+section .left img {
+  background-color: none;
+  display: block;
+  margin-left: 20px;
+  margin-top: 20px;
+  float: left;
+  position: absolute;
+}
+
+section .left p {
+  text-align: left;
+  width: 22%;
+  height: 100%;
+  padding: 50px 30px;
+  overflow: hidden;
+  position: absolute;
+  margin-left: 20px;
+}
+section #uparrowblack {
+  background-color: none;
+  display: block;
+  margin-top: 20px;
+  float: right;
+  position: absolute;
+  right: 3px;
+  margin-right: 20px;
+  
+}
+.left button {
+  position: absolute;
+  color: #000;
+  left: 200px;
+  bottom: 0;
+  width: 158px;
+  height: 38px;
+  border: 3px solid #000;
+  background-color: transparent;
+  border-radius: 30px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.left button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+section .left #card {  
+  position: absolute;
+  left: 25px;
+  top: 260px;
+}
+
+#bold {
+  font-size: 28px;
+  font-weight: 500;
+}
+ 
